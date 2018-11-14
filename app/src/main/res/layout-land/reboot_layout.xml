@@ -14,7 +14,7 @@
         along with this program.  If not, see <http://www.gnu.org/licenses/>.*/-->
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:wubydax="http://schemas.android.com/apk/res-auto"
+    xmlns:hades="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rebootMenuMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -37,36 +37,36 @@
         android:orientation="horizontal"
         android:weightSum="3">
 
-        <com.wubydax.romcontrol.v2.views.RebootView
+        <com.hades.romcontrol.v2.views.RebootView
             android:id="@+id/rebootDevice"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            wubydax:rebootColor="@color/colorAccent"
-            wubydax:rebootText="@string/reboot_device_text"
+            hades:rebootColor="@color/colorAccent"
+            hades:rebootText="@string/reboot_device_text"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"/>
 
-        <com.wubydax.romcontrol.v2.views.RebootView
+        <com.hades.romcontrol.v2.views.RebootView
             android:id="@+id/rebootRecovery"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            wubydax:rebootColor="@android:color/holo_red_light"
-            wubydax:rebootText="@string/reboot_recovery_text"
+            hades:rebootColor="@android:color/holo_red_light"
+            hades:rebootText="@string/reboot_recovery_text"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"/>
 
-        <com.wubydax.romcontrol.v2.views.RebootView
+        <com.hades.romcontrol.v2.views.RebootView
             android:id="@+id/rebootUI"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            wubydax:rebootColor="@color/colorAccent"
-            wubydax:rebootText="@string/reboot_ui_text"
+            hades:rebootColor="@color/colorAccent"
+            hades:rebootText="@string/reboot_ui_text"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"/>
     </LinearLayout>

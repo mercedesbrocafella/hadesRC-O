@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+    <com.hades.romcontrol.v2.prefs.MySwitchPreference
         android:title="Torchlight"
         android:key="torchlight_enable"
         android:defaultValue="0"
         android:summary="Turn on the torch light by pressing and holding the volume up key while the screen is off" />
-    <com.wubydax.romcontrol.v2.prefs.MyListPreference
+    <com.hades.romcontrol.v2.prefs.MyListPreference
         android:entries="@array/torchlight_timeout_entries"
         android:title="Torch light time-out"
         android:dependency="torchlight_enable"
