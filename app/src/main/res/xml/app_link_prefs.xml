@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="Good Lock Preferences">
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        app:componentName="com.samsung.android.qstuner/com.samsung.android.qstuner.QsTunerActivity"
+        android:title="Quick Settings Tuner"
+        android:summary=""/>
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        app:componentName="com.samsung.android.pluginrecents/com.samsung.android.pluginrecents.setting.SettingsActivity"
+        android:title="Recents Panel Tuner"
+        android:summary=""/>
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        app:componentName="com.samsung.systemui.lockstar/com.samsung.systemui.lockstar.settings.main.SettingActivity"
+        android:title="Lockscreen Tuner"
+        android:summary=""/>
+
+        <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+            app:componentName="com.samsung.android.multistar/com.samsung.android.multistar.MainActivity"
+            android:title="Multiwindow Tuner"
+            android:summary=""/>
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        app:componentName="com.samsung.android.app.routine2/com.samsung.android.app.routine2.settings.RoutineSettingsMainActivity"
+        android:title="GoodLock Routines"
+        android:summary=""/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Other useful apps">
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        app:componentName="com.samsung.android.sidegesturepad/com.samsung.android.sidegesturepad.settings.SGPSettingsActivity"
+        android:title="One Hand + Settings"
+        android:summary=""/>
+
+        <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+            app:componentName="com.android.settings/com.android.settings.Settings$NavigationBarSettingsActivity"
+            android:title="Navigation Bar settings"
+            android:summary=""/>
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        app:componentName="com.android.settings/com.android.settings.Settings$NotificationStationActivity"
+        android:title="Notification Log"
+        android:summary=""/>
+
+        <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+            app:componentName="com.android.systemui/com.android.systemui.egg.MLandActivity"
+            android:icon="@drawable/mm"
+            android:title="Marshmallow Easter Egg"
+            android:summary="Flappy Android"/>
+
+        <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+            app:componentName="com.android.egg/com.android.egg.neko.NekoActivationActivity"
+            android:icon="@drawable/nn"
+            android:title="Nougat Easter Egg"
+            android:summary="Cats"/>
+
+        <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+            app:componentName="com.android.egg/com.android.egg.octo.Ocquarium"
+            android:icon="@drawable/oo"
+            android:title="Oreo Easter Egg"
+            android:summary="Octopus"/>
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:title="Content scaling"
+        android:summary="Change display scaling on the go, without reboot."
+        app:componentName="com.aryamod.changedpi/com.aryamod.changedpi.MainActivity" />
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        app:componentName="org.adaway/org.adaway.ui.BaseActivity"
+        android:title="AdAway"
+        android:summary="block ads and malware"/>
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        app:componentName="mobi.xperiacle.touchwiz.themer/mobi.xperiacle.touchwiz.themer.IconThemer"
+        android:title="Galaxy Icon Themer"
+        android:summary="With Galaxy Icon Themer, you have the ability to change your icon theme whenever you like using popular icon packs from the Play Store."/>
+
+    <com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+        android:title="Emoji Switcher"
+        android:summary="conveniently switch out the emoji in your system"
+        app:componentName="com.stevenschoen.emojiswitcher/com.stevenschoen.emojiswitcher.SwitcherActivity" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

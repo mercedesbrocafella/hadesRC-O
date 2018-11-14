@@ -44,8 +44,8 @@
         <item>2</item>
     </string-array>
     <array name="thumbnail_drawables">
-        <item>@drawable/icon_6</item>
-        <item>@drawable/icon_5</item>
+        <item>@drawable/ic_arrow</item>
+        <item>@drawable/ic_arrow</item>
     </array>
 
     <string-array name="custom_bg_type_entries">
@@ -82,5 +82,21 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+    <string-array name="torchlight_timeout_entries">
+        <item>@string/torchlight_timeout_15s</item>
+        <item>@string/torchlight_timeout_30s</item>
+        <item>@string/torchlight_timeout_1m</item>
+        <item>@string/torchlight_timeout_2m</item>
+        <item>@string/torchlight_timeout_5m</item>
+        <item>@string/torchlight_timeout_10m</item>
+    </string-array>
+    <string-array name="torchlight_timeout_values">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
     </string-array>
 </resources>

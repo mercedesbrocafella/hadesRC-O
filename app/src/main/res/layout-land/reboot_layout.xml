@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            wubydax:rebootColor="@color/colorPrimary"
+            wubydax:rebootColor="@android:color/holo_red_light"
             wubydax:rebootText="@string/reboot_recovery_text"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"/>
