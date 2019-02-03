@@ -65,24 +65,9 @@
             android:summary="Octopus"/>
 
     <com.hades.romcontrol.v2.prefs.OpenAppPreference
-        android:title="Content scaling"
-        android:summary="Change display scaling on the go, without reboot."
-        app:componentName="com.aryamod.changedpi/com.aryamod.changedpi.MainActivity" />
-
-    <com.hades.romcontrol.v2.prefs.OpenAppPreference
         app:componentName="org.adaway/org.adaway.ui.BaseActivity"
         android:title="AdAway"
         android:summary="block ads and malware"/>
-
-    <com.hades.romcontrol.v2.prefs.OpenAppPreference
-        app:componentName="mobi.xperiacle.touchwiz.themer/mobi.xperiacle.touchwiz.themer.IconThemer"
-        android:title="Galaxy Icon Themer"
-        android:summary="With Galaxy Icon Themer, you have the ability to change your icon theme whenever you like using popular icon packs from the Play Store."/>
-
-    <com.hades.romcontrol.v2.prefs.OpenAppPreference
-        android:title="Emoji Switcher"
-        android:summary="conveniently switch out the emoji in your system"
-        app:componentName="com.stevenschoen.emojiswitcher/com.stevenschoen.emojiswitcher.SwitcherActivity" />
 
     </PreferenceCategory>
 </PreferenceScreen>
