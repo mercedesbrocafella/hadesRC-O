@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/6thGear-RomControl-v2.0.iml" filepath="$PROJECT_DIR$/.idea/6thGear-RomControl-v2.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hadesRC-O.iml" filepath="$PROJECT_DIR$/hadesRC-O.iml" />
     </modules>
   </component>
 </project>
