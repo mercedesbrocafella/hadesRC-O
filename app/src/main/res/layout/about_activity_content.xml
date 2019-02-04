@@ -21,7 +21,7 @@
     android:layout_marginEnd="@dimen/activity_horizontal_margin"
     android:layout_marginStart="@dimen/activity_horizontal_margin"
     android:fillViewport="true"
-    app:behavior_overlapTop="128dp"
+    app:behavior_overlapTop="110dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_about">
 
