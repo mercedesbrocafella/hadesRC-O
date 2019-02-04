@@ -29,7 +29,7 @@ import java.util.List;
 
         You should have received a copy of the GNU General Public License
         along with this program.  If not, see <http://www.gnu.org/licenses/>.*/
-public class MyListPreference extends ListPreference implements Preference.OnPreferenceChangeListener {
+public class MyListPreferenceSecure extends ListPreference implements Preference.OnPreferenceChangeListener {
     private final String mPackageToKill, mDependentValue;
     private final boolean mIsSilent;
     private final boolean mIsRebootRequired;
@@ -38,7 +38,7 @@ public class MyListPreference extends ListPreference implements Preference.OnPre
     private List<CharSequence> mEntries, mValues;
 
 
-    public MyListPreference(Context context, AttributeSet attrs) {
+    public MyListPreferenceSecure(Context context, AttributeSet attrs) {
         super(context, attrs);
         mContentResolver = context.getContentResolver();
         mEntries = Arrays.asList(getEntries());
@@ -67,7 +67,7 @@ public class MyListPreference extends ListPreference implements Preference.OnPre
 
     @Override
     protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
-        String dbValue = Settings.System.getString(mContentResolver, getKey());
+        String dbValue = Settings.Secure.getString(mContentResolver, getKey());
         String value = "";
         if (!restoreValue) {
             if (dbValue != null) {
@@ -76,7 +76,7 @@ public class MyListPreference extends ListPreference implements Preference.OnPre
             } else {
                 if (defaultValue != null) {
                     value = (String) defaultValue;
-                    Settings.System.putString(mContentResolver, getKey(), (String) defaultValue);
+                    Settings.Secure.putString(mContentResolver, getKey(), (String) defaultValue);
                 }
             }
         } else {
@@ -110,7 +110,7 @@ public class MyListPreference extends ListPreference implements Preference.OnPre
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        Settings.System.putString(mContentResolver, getKey(), (String) newValue);
+        Settings.Secure.putString(mContentResolver, getKey(), (String) newValue);
 
         int index = mValues.indexOf(newValue);
         if (index != -1) {
