@@ -44,6 +44,17 @@
             android:name=".utils.BackupRestoreIntentService"
             android:exported="false">
         </service>
+
+        <service
+            android:name=".utils.QuickSettingsService"
+            android:icon="@drawable/ic_reboot"
+            android:label="@string/reboot_device_text"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action
+                    android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
