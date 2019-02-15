@@ -86,6 +86,9 @@
     <string name="torchlight_timeout_2m">2 Minutes</string>
     <string name="torchlight_timeout_5m">5 Minutes</string>
     <string name="torchlight_timeout_10m">10 Minutes</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="middle">Center</string>
 
     <!--These strings are to set the default fragment to open for the first time the app launches-->
 </resources>
